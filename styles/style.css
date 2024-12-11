@@ -1,0 +1,117 @@
+@charset "utf-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Caveat&family=Lato:wght@400;900&display=swap');
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: "Lato", sans-serif; 
+    --fonte03: "Caveat", cursive;
+}
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    box-sizing: border-box;
+}
+
+html, body{
+    min-height: 100vh;
+    background-color: darkblue;
+    font-family: var(--fonte01);
+}
+
+header {  
+    background-color: black;
+    color: white;
+    text-align: center;
+}
+
+header h1 {
+    font: normal 700 6vw var(--fonte02);
+    font-variant: small-caps;
+    padding-top: 50px;
+}
+
+header > p {
+    padding-bottom: 50px;
+}
+
+header a, footer  a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bolder;
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section {
+    padding-top: 16vh;
+    padding-bottom: 16vh;
+    line-height: 7.4vw;
+    padding-left: 30px;
+    font-family: var(--fonte03);
+    font-size: 3.7vw;
+    font-weight: 500;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+section.normal {
+    background-color: #fff;
+    color: black;
+    box-shadow: inset 2px -2px 13px 0px rgba(0, 0, 0, 0.438);
+}
+
+section.imgA {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    background-image: url('../img/ponte.jpg'); 
+}
+
+ section.imgA > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 6px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+} 
+
+section.imgB{
+    background-color: rgb(34, 31, 31);
+    color: white;    
+    background-image: url('../img/tea-time.jpg');
+}
+
+section.imgB > p {
+    display: inline-block;
+    padding: 6px;
+    background-color: rgba(0, 0, 0, 0.603);
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+}   
+
+section.imgC {
+    background-color: rgb(34, 31, 31);
+    color: white;
+    background-image: url('../img/setup.jpg'); 
+}
+
+ section.imgC > p {
+    display: inline-block;
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 6px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.6);
+} 
+
+footer {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    font-size: 1.1em;
+}
+
